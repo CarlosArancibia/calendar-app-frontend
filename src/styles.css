@@ -1,0 +1,136 @@
+html,
+body {
+  font-family: Nunito, sans-serif;
+}
+
+/* Navbar */
+
+.nav-title {
+  display: inline;
+  margin-left: 10px;
+  font-size: 32px;
+  font-family: 'Parisienne', cursive;
+  font-weight: bolder;
+}
+
+nav {
+  background-color: #0062cc;
+}
+
+nav * {
+  color: #fff;
+}
+
+/* Buttons FAB */
+
+.fab {
+  position: fixed;
+  bottom: 40px;
+  border-radius: 50%;
+  padding: 20px;
+  color: #fff;
+}
+
+.fab-add {
+  right: 40px;
+}
+
+.fab-delete {
+  left: 40px;
+}
+
+/* Modal */
+
+.ReactModalPortal .ReactModal__Overlay {
+  transition: opacity 0.2s ease-in-out;
+  z-index: 999;
+}
+
+.modal-background {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: white;
+  border-radius: 5px;
+  color: rgb(51, 51, 51);
+  display: inline;
+  max-height: 620px;
+  max-width: 500px;
+  outline: none;
+  padding: 18px 10px;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    max-width: 350px;
+  }
+}
+
+/* Loader */
+.loader {
+  height: 5px;
+  width: 5px;
+  color: #0062cc;
+  box-shadow: -10px -10px 0 5px, -10px -10px 0 5px, -10px -10px 0 5px, -10px -10px 0 5px;
+  animation: loader-38 6s infinite;
+}
+
+@keyframes loader-38 {
+  0% {
+    box-shadow: -10px -10px 0 5px, -10px -10px 0 5px, -10px -10px 0 5px, -10px -10px 0 5px;
+  }
+  8.33% {
+    box-shadow: -10px -10px 0 5px, 10px -10px 0 5px, 10px -10px 0 5px, 10px -10px 0 5px;
+  }
+  16.66% {
+    box-shadow: -10px -10px 0 5px, 10px -10px 0 5px, 10px 10px 0 5px, 10px 10px 0 5px;
+  }
+  24.99% {
+    box-shadow: -10px -10px 0 5px, 10px -10px 0 5px, 10px 10px 0 5px, -10px 10px 0 5px;
+  }
+  33.32% {
+    box-shadow: -10px -10px 0 5px, 10px -10px 0 5px, 10px 10px 0 5px, -10px -10px 0 5px;
+  }
+  41.65% {
+    box-shadow: 10px -10px 0 5px, 10px -10px 0 5px, 10px 10px 0 5px, 10px -10px 0 5px;
+  }
+  49.98% {
+    box-shadow: 10px 10px 0 5px, 10px 10px 0 5px, 10px 10px 0 5px, 10px 10px 0 5px;
+  }
+  58.31% {
+    box-shadow: -10px 10px 0 5px, -10px 10px 0 5px, 10px 10px 0 5px, -10px 10px 0 5px;
+  }
+  66.64% {
+    box-shadow: -10px -10px 0 5px, -10px -10px 0 5px, 10px 10px 0 5px, -10px 10px 0 5px;
+  }
+  74.97% {
+    box-shadow: -10px -10px 0 5px, 10px -10px 0 5px, 10px 10px 0 5px, -10px 10px 0 5px;
+  }
+  83.3% {
+    box-shadow: -10px -10px 0 5px, 10px 10px 0 5px, 10px 10px 0 5px, -10px 10px 0 5px;
+  }
+  91.63% {
+    box-shadow: -10px -10px 0 5px, -10px 10px 0 5px, -10px 10px 0 5px, -10px 10px 0 5px;
+  }
+  100% {
+    box-shadow: -10px -10px 0 5px, -10px -10px 0 5px, -10px -10px 0 5px, -10px -10px 0 5px;
+  }
+}
