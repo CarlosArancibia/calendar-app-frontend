@@ -5,7 +5,7 @@
 }
 
 .bg-custom {
-  background-color: #0062cc;
+  background-color: #157347;
 }
 
 .form {
@@ -25,14 +25,14 @@
 
 .form-right {
   border-radius: 0 10px 10px 0;
-  background-color: #0062cc;
+  background-color: #157347;
   color: #fff;
   padding: 90px;
 }
 
 .form-right button {
   background-color: #fff;
-  color: #0062cc;
+  color: #157347;
 }
 
 .title {

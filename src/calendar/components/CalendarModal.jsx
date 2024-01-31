@@ -150,7 +150,7 @@ export const CalendarModal = () => {
             Adicional information
           </small>
         </div>
-        <button type="submit" className="btn btn-outline-primary mt-3">
+        <button type="submit" className="btn btn-outline-success mt-3">
           <i className="fa fa-save"></i> <span>Save</span>
         </button>
       </form>

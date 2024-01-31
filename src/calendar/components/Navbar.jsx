@@ -10,7 +10,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="navbar ">
+    <nav className="navbar">
       <div className="container-fluid mx-3">
         <a className="navbar-brand">
           <i className="fa fa-calendar-alt fs-4"></i> <h1 className="nav-title">{user?.name}</h1>

@@ -19,7 +19,7 @@ export const FabAddEvent = () => {
   };
 
   return (
-    <button className="btn btn-primary fab fab-add" onClick={onAddNewEvent}>
+    <button className="btn btn-success fab fab-add" onClick={onAddNewEvent}>
       <i className="fa fa-add"></i>
     </button>
   );

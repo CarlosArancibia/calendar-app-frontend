@@ -72,10 +72,10 @@ export const LoginPage = () => {
           <h1 className="title title-left">Cale</h1>
           <h2 className="fw-bold mt-md-5">Log In</h2>
           <small>Enter your account details</small>
-          <form onSubmit={onLoginSubmit}>
+          <form onSubmit={onLoginSubmit} noValidate>
             <div className="form-group mt-3">
               <input
-                type="text"
+                type="email"
                 className="form-control"
                 placeholder="Email"
                 name="loginEmail"
@@ -94,15 +94,38 @@ export const LoginPage = () => {
               />
             </div>
             <div className="form-group mt-3">
-              <button className="btn btn-primary w-100">Log In</button>
+              <button className="btn btn-success w-100">Log In</button>
             </div>
           </form>
+          <article className="d-none d-sm-none d-md-block position-absolute bottom-0 text-secondary">
+            <h3 className="fs-6 fw-bold">Log in with these users:</h3>
+            <ul className="list-unstyled">
+              <li>
+                <small>
+                  <i className="fa fa-user-alt fs-5 me-2 me-2"></i>
+                  carlos@calendar.com
+                </small>
+                <small>
+                  <i className="fa fa-unlock-alt fs-5 mx-2"></i> secret-calendar
+                </small>
+              </li>
+              <li>
+                <small>
+                  <i className="fa fa-user-alt fs-5 me-2"></i>
+                  mel@calendar.com
+                </small>
+                <small>
+                  <i className="fa fa-unlock-alt fs-5 ms-4 me-2"></i> secret-calendar
+                </small>
+              </li>
+            </ul>
+          </article>
         </article>
         <article className="form form-right col-sm-12 col-md-6">
           <h1 className="title title-right">ndar</h1>
           <h2 className="fw-bold mt-md-5">Sign Up</h2>
           <small>Let's join with us</small>
-          <form onSubmit={onRegisterSubmit}>
+          <form onSubmit={onRegisterSubmit} noValidate>
             <div className="form-group mt-3">
               <input
                 type="text"
@@ -115,7 +138,7 @@ export const LoginPage = () => {
             </div>
             <div className="form-group mt-2">
               <input
-                type="text"
+                type="email"
                 className="form-control"
                 placeholder="Email"
                 name="registerEmail"
